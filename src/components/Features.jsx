@@ -24,7 +24,7 @@ const Features = () => {
                 <div className="w-full md:w-1/2">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Bloc 1 */}
-                        <div className="p-4">
+                        <div className="p-0 md:p-4">
                             <div className="flex flex-col items-start gap-4">
                                 <div className="flex-shrink-0 w-10 h-10 border-2 border-black rounded-full flex items-center justify-center mb-4">
                                     <span className="text-lg font-bold text-black">
@@ -44,7 +44,7 @@ const Features = () => {
                         </div>
 
                         {/* Bloc 2 */}
-                        <div className="p-4">
+                        <div className="p-0 md:p-4">
                             <div className="flex flex-col items-start gap-4">
                                 <div className="flex-shrink-0 w-10 h-10 border-2 border-black rounded-full flex items-center justify-center mb-4">
                                     <span className="text-lg font-bold text-black">
@@ -65,7 +65,7 @@ const Features = () => {
                         </div>
 
                         {/* Bloc 3 */}
-                        <div className="p-4">
+                        <div className="p-0 md:p-4">
                             <div className="flex flex-col items-start gap-4">
                                 <div className="flex-shrink-0 w-10 h-10 border-2 border-black rounded-full flex items-center justify-center mb-4">
                                     <span className="text-lg font-bold text-black">
@@ -85,7 +85,7 @@ const Features = () => {
                         </div>
 
                         {/* Bloc 4 */}
-                        <div className="p-4">
+                        <div className="p-0 md:p-4">
                             <div className="flex flex-col items-start gap-4">
                                 <div className="flex-shrink-0 w-10 h-10 border-2 border-black rounded-full flex items-center justify-center mb-4">
                                     <span className="text-lg font-bold text-black">

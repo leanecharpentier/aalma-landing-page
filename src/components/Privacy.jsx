@@ -1,7 +1,7 @@
 const Privacy = () => {
     return (
         <section className="px-4 py-20 bg-neutral-700">
-            <div className="text-center max-w-3xl mx-auto">
+            <div className="text-left md:text-center max-w-3xl md:mx-auto">
                 <p className="text-sm text-white uppercase tracking-wide mb-4">
                     Confidentialité
                 </p>

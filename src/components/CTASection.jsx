@@ -9,7 +9,7 @@ const CTASection = () => {
 
     return (
         <section className="px-4 py-20">
-            <div className="bg-neutral-100 border border-neutral-300 rounded-lg p-8 md:p-12 text-center max-w-4xl mx-auto">
+            <div className="bg-neutral-100 border border-neutral-300 rounded-lg p-8 md:p-12 text-left md:text-center max-w-4xl md:mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                     Prêt à réhumaniser le travail dans votre entreprise ?
                 </h2>
@@ -19,7 +19,7 @@ const CTASection = () => {
                     semaines pour tester notre plateforme et constater les
                     résultats concrets sur votre organisation.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
                     <a
                         href="#contact"
                         onClick={(e) => scrollToSection(e, "#contact")}

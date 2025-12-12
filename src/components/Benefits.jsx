@@ -9,8 +9,8 @@ const Benefits = () => {
 
     return (
         <section className="px-6 md:px-24 py-20 bg-neutral-700">
-            {/* En-tête centré */}
-            <div className="text-center mb-16">
+            {/* En-tête */}
+            <div className="text-left md:text-center mb-16">
                 <p className="text-sm text-white uppercase tracking-wide mb-4">
                     Bénéfices
                 </p>
@@ -18,7 +18,7 @@ const Benefits = () => {
                     Une plateforme unique, des bénéfices pour chaque
                     décisionnaire
                 </h2>
-                <p className="text-lg md:text-lg text-white max-w-3xl mx-auto">
+                <p className="text-lg md:text-lg text-white max-w-3xl md:mx-auto">
                     Que vous soyez chef d'entreprise, manager ou référent santé
                     mentale, Aalma s'adapte à vos besoins spécifiques. Chacun
                     trouve sa place dans cette plateforme pour améliorer le
@@ -29,10 +29,10 @@ const Benefits = () => {
             {/* 3 blocs en ligne */}
             <div className="grid md:grid-cols-3 gap-8 mb-12">
                 {/* Bloc 1 : Chef d'entreprise */}
-                <div className="text-center p-6">
-                    <div className="mb-4 flex justify-center">
+                <div className="text-left md:text-center p-0 md:p-6">
+                    <div className="mb-4 flex justify-start md:justify-center">
                         {/* Icon placeholder */}
-                        <div className="w-16 h-16 flex items-center justify-center">
+                        <div className="w-16 h-16 flex items-center">
                             <svg
                                 className="w-8 h-8 text-white"
                                 fill="none"
@@ -60,10 +60,10 @@ const Benefits = () => {
                 </div>
 
                 {/* Bloc 2 : Référents de la santé mental */}
-                <div className="text-center p-6">
-                    <div className="mb-4 flex justify-center">
+                <div className="text-left md:text-center p-0 md:p-6">
+                    <div className="mb-4 flex justify-start md:justify-center">
                         {/* Icon placeholder */}
-                        <div className="w-16 h-16 flex items-center justify-center">
+                        <div className="w-16 h-16 flex items-center">
                             <svg
                                 className="w-8 h-8 text-white"
                                 fill="none"
@@ -91,10 +91,10 @@ const Benefits = () => {
                 </div>
 
                 {/* Bloc 3 : Managers */}
-                <div className="text-center p-6">
-                    <div className="mb-4 flex justify-center">
+                <div className="text-left md:text-center p-0 md:p-6">
+                    <div className="mb-4 flex justify-start md:justify-center">
                         {/* Icon placeholder */}
-                        <div className="w-16 h-16 flex items-center justify-center">
+                        <div className="w-16 h-16 flex items-center">
                             <svg
                                 className="w-8 h-8 text-white"
                                 fill="none"

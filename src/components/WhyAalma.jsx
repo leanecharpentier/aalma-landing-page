@@ -1,15 +1,15 @@
 const WhyAalma = () => {
     return (
         <section id="solutions" className="w-full px-6 md:px-24 py-20">
-            {/* En-tête centré */}
-            <div className="text-center mb-16">
+            {/* En-tête */}
+            <div className="text-left md:text-center mb-16">
                 <p className="text-sm text-gray-500 uppercase tracking-wide mb-4">
                     Pourquoi
                 </p>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     Pourquoi choisir Aalma ?
                 </h2>
-                <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                <p className="text-lg md:text-xl text-gray-600 max-w-3xl md:mx-auto">
                     Une solution adaptée à chaque décisionnaire pour transformer
                     la santé mentale en levier de performance.
                 </p>
