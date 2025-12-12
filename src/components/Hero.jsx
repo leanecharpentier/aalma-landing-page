@@ -26,7 +26,10 @@ const Hero = () => {
                         tangibles et des actions concrètes.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="bg-primary text-black px-8 py-3 rounded-full hover:bg-primary-light transition font-medium">
+                        <button
+                            onClick={(e) => scrollToSection(e, "#contact")}
+                            className="bg-primary text-black px-8 py-3 rounded-full hover:bg-primary-light transition font-medium"
+                        >
                             Démonstration gratuite
                         </button>
                         <button

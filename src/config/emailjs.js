@@ -7,9 +7,10 @@ import emailjs from "@emailjs/browser";
  */
 const getSubjectLabel = (subjectValue) => {
     const subjects = {
-        devis: "Demander un devis",
-        demo: "Demander une démo",
-        autre: "Autre",
+        devis: "Je souhaite obtenir un devis",
+        demo: "Je souhaite avoir une démo",
+        "guide-rse-esg": "Je souhaite obtenir le guide RSE - ESG",
+        autre: "Je souhaite obtenir plus d'informations",
     };
     return subjects[subjectValue] || subjectValue;
 };

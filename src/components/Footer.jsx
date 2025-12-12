@@ -1,6 +1,14 @@
+import { Link, useLocation } from "react-router-dom";
+
 const Footer = () => {
+    const location = useLocation();
+    const isHomePage = location.pathname === "/";
+
     const scrollToSection = (e, sectionId) => {
         e.preventDefault();
+        if (!isHomePage) {
+            return;
+        }
         const element = document.querySelector(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -24,45 +32,58 @@ const Footer = () => {
                     <h4 className="font-semibold mb-4">Navigation</h4>
                     <ul className="space-y-2 text-sm text-gray-400">
                         <li>
-                            <a
-                                href="#accueil"
-                                onClick={(e) => scrollToSection(e, "#accueil")}
-                                className="hover:text-white transition"
-                            >
-                                Accueil
-                            </a>
+                            {isHomePage ? (
+                                <a
+                                    href="#accueil"
+                                    onClick={(e) => scrollToSection(e, "#accueil")}
+                                    className="hover:text-white transition"
+                                >
+                                    Accueil
+                                </a>
+                            ) : (
+                                <Link
+                                    to="/"
+                                    className="hover:text-white transition"
+                                >
+                                    Accueil
+                                </Link>
+                            )}
                         </li>
-                        <li>
-                            <a
-                                href="#solutions"
-                                onClick={(e) =>
-                                    scrollToSection(e, "#solutions")
-                                }
-                                className="hover:text-white transition"
-                            >
-                                Solutions
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#ressources"
-                                onClick={(e) =>
-                                    scrollToSection(e, "#ressources")
-                                }
-                                className="hover:text-white transition"
-                            >
-                                Ressources
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#contact"
-                                onClick={(e) => scrollToSection(e, "#contact")}
-                                className="hover:text-white transition"
-                            >
-                                Contact
-                            </a>
-                        </li>
+                        {isHomePage && (
+                            <>
+                                <li>
+                                    <a
+                                        href="#solutions"
+                                        onClick={(e) =>
+                                            scrollToSection(e, "#solutions")
+                                        }
+                                        className="hover:text-white transition"
+                                    >
+                                        Solutions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#ressources"
+                                        onClick={(e) =>
+                                            scrollToSection(e, "#ressources")
+                                        }
+                                        className="hover:text-white transition"
+                                    >
+                                        Ressources
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#contact"
+                                        onClick={(e) => scrollToSection(e, "#contact")}
+                                        className="hover:text-white transition"
+                                    >
+                                        Contact
+                                    </a>
+                                </li>
+                            </>
+                        )}
                     </ul>
                 </div>
 
@@ -76,14 +97,20 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="hover:text-white transition">
+                            <Link
+                                to="/politique-confidentialite"
+                                className="hover:text-white transition"
+                            >
                                 Confidentialité
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="hover:text-white transition">
+                            <Link
+                                to="/conditions-utilisation"
+                                className="hover:text-white transition"
+                            >
                                 Mentions légales
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
