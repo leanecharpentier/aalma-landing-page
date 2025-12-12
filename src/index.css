@@ -4,92 +4,92 @@
 
 /* Variables CSS personnalisées */
 :root {
-  /* Couleurs principales */
-  --color-primary: #44d7a8;
-  --color-primary-dark: #2563eb;
-  --color-primary-light: #60a5fa;
-  /* Couleurs secondaires */
-  --color-secondary: #8b5cf6;
-  --color-secondary-dark: #7c3aed;
-  /* Couleurs d'accent */
-  --color-accent: #f59e0b;
-  --color-accent-dark: #d97706;
-  /* Couleurs de texte */
-  --color-text-primary: #111827;
-  --color-text-secondary: #6b7280;
-  --color-text-light: #9ca3af;
-  /* Couleurs de fond */
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f9fafb;
-  --color-bg-dark: #111827;
-  /* Espacements personnalisés */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
-  /* Typographie */
-  --font-family-primary: "Montserrat", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-family-heading: "Montserrat", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  /* Tailles de police */
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
-  /* Rayons de bordure */
-  --border-radius-sm: 0.25rem;
-  --border-radius-md: 0.5rem;
-  --border-radius-lg: 0.75rem;
-  --border-radius-xl: 1rem;
-  /* Ombres */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  /* Transitions */
-  --transition-fast: 150ms ease-in-out;
-  --transition-base: 300ms ease-in-out;
-  --transition-slow: 500ms ease-in-out;
+    /* Couleurs principales */
+    --color-primary: #ffa800;
+    --color-primary-dark: #cc8600;
+    --color-primary-light: #ffca5f;
+    --color-primary-lightest: #fff6e5;
+
+    /* Couleurs de texte */
+    --color-text-primary: #111827;
+    --color-text-secondary: #6b7280;
+    --color-text-light: #9ca3af;
+    /* Couleurs de fond */
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f9fafb;
+    --color-bg-dark: #111827;
+    /* Espacements personnalisés */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    /* Typographie */
+    --font-family-primary: "Montserrat", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-family-heading: "Montserrat", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Tailles de police */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    /* Rayons de bordure */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 0.75rem;
+    --border-radius-xl: 1rem;
+    /* Ombres */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    /* Transitions */
+    --transition-fast: 150ms ease-in-out;
+    --transition-base: 300ms ease-in-out;
+    --transition-slow: 500ms ease-in-out;
 }
 
 /* Classes utilitaires pour utiliser les variables avec Tailwind */
 .text-primary {
-  color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 .border-primary {
-  border-color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 .bg-primary {
-  background-color: var(--color-primary);
+    background-color: var(--color-primary);
 }
 
 .bg-primary-dark {
-  background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-dark);
+}
+
+.bg-primary-lightest {
+    background-color: var(--color-primary-lightest);
 }
 
 .hover\:bg-primary-dark:hover {
-  background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-dark);
 }
 
 /* Classes pour les transitions */
 .transition {
-  transition: all var(--transition-base);
+    transition: all var(--transition-base);
 }
 
 /* Personnalisation de la police */
 body {
-  font-family: var(--font-family-primary);
+    font-family: var(--font-family-primary);
 }
 
 h1,
@@ -98,43 +98,27 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-heading);
+    font-family: var(--font-family-heading);
 }
 
 /* Styles personnalisés pour intl-tel-input */
 .iti {
-  width: 100%;
-}
-
-.iti__flag-container {
-  border-radius: 0.5rem 0 0 0.5rem;
+    width: 100%;
 }
 
 .iti__selected-flag {
-  padding: 0 0.5rem;
-  border: 1px solid #d1d5db;
-  border-right: none;
-  border-radius: 0.5rem 0 0 0.5rem;
-  background-color: white;
+    padding: 0 0.5rem;
+    border-right: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: white;
 }
 
 .iti__selected-flag:hover {
-  background-color: #f9fafb;
-}
-
-.iti input[type="tel"] {
-  border-left: none;
-  border-radius: 0 0.5rem 0.5rem 0;
-  padding-left: 0.75rem;
-}
-
-.iti input[type="tel"]:focus {
-  border-left: none;
+    background-color: #f9fafb;
 }
 
 .iti__country-list {
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
-
