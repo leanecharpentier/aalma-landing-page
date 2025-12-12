@@ -45,7 +45,7 @@ const Hero = () => {
                     <img
                         src={heroImage}
                         alt="Aalma - Plateforme de santé mentale"
-                        className="w-full h-96 object-cover rounded-lg"
+                        className="w-full h-auto max-h-96 object-contain"
                     />
                 </div>
             </div>
